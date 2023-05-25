@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.Master.cs" Inherits="Office_Goods.Views.Admin.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        *{
+            font-family:STXihei;
+        }
+        #left{
+            color:white;
+            font:bold;
+            height:810px;
+            background-color:steelblue;
+        }
+        #top{
+            color:white;
+            background-color:midnightblue;
+        }
+        label{
+            color:aliceblue;
+            font:bold;
+        }
+        
+    </style>
+    <link href="../../Assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="row" id="top">
+          <h3 style="font:bold">办公物品管理系统</h3>
+    </div>
+    <div class="row">
+            <div class="col-2" id="left">
+                <div style="height:5px">
+
+                </div>
+                <div class="p-4">
+                    <div class="mb-3">
+                        <img src="../../Assets/images/user2.png" style="height:60px; width:60px"/>
+                        <a href="#"><label>用户维护</label></a>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <img src="../../Assets/images/wupin.png" style="height:51px; width:68px"/>
+                        <a href="#"><label>物品信息</label></a>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <img src="../../Assets/images/ruku.png" style="height:51px; width:68px"/>
+                        <a href="#"><label>物品入库</label></a>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <img src="../../Assets/images/chuku.png" style="height:51px; width:68px"/>
+                        <a href="#"><label>物品出库</label></a>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <img src="../../Assets/images/wupin.png" style="height:51px; width:68px"/>
+                        <a href="#"><label>类别信息</label></a>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <img src="../../Assets/images/wupin.png" style="height:51px; width:68px"/>
+                        <a href="#"><label>品牌信息</label></a>
+                    </div>
+                    <div style="height:50px">
+
+                    </div>
+                    <div class="mb-3">
+                        <img src="../../Assets/images/logout.png" style="height:60px; width:60px"/>
+                        <a href="#"><label>退出</label></a>
+                    </div>
+                </div>
+             </div>
+                <div class="col-10">
+                    <form id="form2" runat="server">
+                        <div>
+                            <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </form>
+               </div>
+</div>
+</body>
+</html>
