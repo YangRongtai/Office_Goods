@@ -7,83 +7,65 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Office_Goods.Views
+namespace Office_Goods.Views.Clients
 {
 
 
-    public partial class Login
+    public partial class Query
     {
 
         /// <summary>
-        /// UnameTb 控件。
+        /// GNameTb 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl UnameTb;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText GNameTb;
 
         /// <summary>
-        /// PasswordTb 控件。
+        /// PManufactCb 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword PasswordTb;
+        protected global::System.Web.UI.WebControls.DropDownList PManufactCb;
 
         /// <summary>
-        /// ClientRd 控件。
+        /// PCategoryCb 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ClientRd;
+        protected global::System.Web.UI.WebControls.DropDownList PCategoryCb;
 
         /// <summary>
-        /// AdminRd 控件。
+        /// GPriceTb 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl AdminRd;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText GPriceTb;
 
         /// <summary>
-        /// ClientRd1 控件。
+        /// GNumTb 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton ClientRd1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText GNumTb;
 
         /// <summary>
-        /// AdminRd1 控件。
+        /// GoodList 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton AdminRd1;
-
-        /// <summary>
-        /// ErrMsg 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ErrMsg;
-
-        /// <summary>
-        /// LoginBtn 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LoginBtn;
+        protected global::System.Web.UI.WebControls.GridView GoodList;
     }
 }

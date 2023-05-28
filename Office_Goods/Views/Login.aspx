@@ -27,7 +27,15 @@
         /*上边界距离*/
         margin-top: 110px;
     }
-
+    .radio-btn {
+        margin-right: 50px;
+    }
+    .text-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
    
     </style>
 
@@ -54,7 +62,7 @@
                         <label for="username">用户名 </label>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input type="email" class="form-control" autocomplete="off" id="username" placeholder="请输入用户名"/>
+                            <input type="email" class="form-control" autocomplete="off" runat="server" id="UnameTb" placeholder="请输入用户名"/>
                          </div>
                     </div>
  
@@ -62,20 +70,25 @@
                         <label for="password">密码</label>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input type="password" class="form-control" autocomplete="off" id="password" placeholder="请输入密码"/>
+                            <input type="password" class="form-control" autocomplete="off" runat="server" id="PasswordTb" placeholder="请输入密码"/>
                         </div>
                     </div>
                     <div class="well well-sm" style="text-align:center;">
-                        <label class="radio-inline">
-                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked" /> 普通用户
+                        <!--<label class="radio-inline" runat="server" id="ClientRd">
+                            <input type="radio" name="optionsRadios"  value="0" checked="checked" /> 普通用户
                         </label>
-                        <label class="radio-inline">
-                            <input type="radio"name="optionsRadios"id="optionsRadios2"values="option2"/>管理员
-                        </label>
+                        <label class="radio-inline" runat="server" id="AdminRd" >
+                            <input type="radio"name="optionsRadios"  values="1"/>管理员
+                        </label>-->
+
+                        <asp:RadioButton ID="ClientRd1" class="radio-btn" runat="server" Text="普通用户" GroupName="UserType" Checked="True" />
+                        <asp:RadioButton ID="AdminRd1" class="radio-btn" runat="server" Text="管理员" GroupName="UserType" />
                     </div>
                     
                     <div>
                         <!--<button class="btn btn-primary btn-block active" id="LoginBtn" type="submit">登录</button>-->
+                        <asp:Label runat="server" ID="ErrMsg" class="text-danger text-center"></asp:Label>
+                        <br>
                         <asp:Button type="submit" ID="LoginBtn" Text="登录" runat="server" class="btn btn-primary btn-block active" OnClick="LoginBtn_Click1" />
                     </div>
 

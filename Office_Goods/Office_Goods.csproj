@@ -77,7 +77,9 @@
     <Content Include="Assets\Images\5.jpg" />
     <Content Include="Assets\Images\6.jpg" />
     <Content Include="Assets\Images\7.jpg" />
+    <Content Include="Assets\Images\logo.jpg" />
     <Content Include="Assets\Images\wupin.png" />
+    <Content Include="Assets\Images\index1.png" />
     <Content Include="Assets\Images\上传图表2.png" />
     <Content Include="Assets\Images\付费图片.png" />
     <Content Include="Assets\Images\chuku.png" />
@@ -87,6 +89,9 @@
     <Content Include="Assets\Images\logout.png" />
     <Content Include="Assets\Images\user1.png" />
     <Content Include="Assets\Images\user2.png" />
+    <Content Include="Assets\Images\menu3.png" />
+    <Content Include="Assets\Images\menu1.png" />
+    <Content Include="Assets\Images\menu2.png" />
     <Content Include="Assets\Lib\css\bootstrap-grid.css" />
     <Content Include="Assets\Lib\css\bootstrap-grid.min.css" />
     <Content Include="Assets\Lib\css\bootstrap-grid.rtl.css" />
@@ -103,6 +108,9 @@
     <Content Include="Assets\Lib\css\bootstrap.min.css" />
     <Content Include="Assets\Lib\css\bootstrap.rtl.css" />
     <Content Include="Assets\Lib\css\bootstrap.rtl.min.css" />
+    <Content Include="Assets\Lib\css\common.css" />
+    <Content Include="Assets\Lib\css\navbar.css" />
+    <Content Include="Assets\Lib\css\reset.css" />
     <Content Include="Assets\Lib\js\bootstrap.bundle.js" />
     <Content Include="Assets\Lib\js\bootstrap.bundle.min.js" />
     <Content Include="Assets\Lib\js\bootstrap.esm.js" />
@@ -114,6 +122,9 @@
     <Content Include="Views\Admin\Categories.aspx" />
     <Content Include="Views\Admin\Goods.aspx" />
     <Content Include="Views\Admin\Clients.aspx" />
+    <Content Include="Views\Clients\Apply.aspx" />
+    <Content Include="Views\Clients\Query.aspx" />
+    <Content Include="Views\index.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -158,6 +169,34 @@
     <Compile Include="Views\Admin\Clients.aspx.designer.cs">
       <DependentUpon>Clients.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Clients\Apply.aspx.cs">
+      <DependentUpon>Apply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Clients\Apply.aspx.designer.cs">
+      <DependentUpon>Apply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Clients\ClientsMaster.Master.cs">
+      <DependentUpon>ClientsMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Clients\ClientsMaster.Master.designer.cs">
+      <DependentUpon>ClientsMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Clients\Query.aspx.cs">
+      <DependentUpon>Query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Clients\Query.aspx.designer.cs">
+      <DependentUpon>Query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,6 +230,7 @@
     <Content Include="Assets\Lib\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <Content Include="Views\Admin\AdminMaster.Master" />
+    <Content Include="Views\Clients\ClientsMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -201,7 +241,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\Lib\css\img\" />
-    <Folder Include="Views\Clients\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

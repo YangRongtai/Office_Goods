@@ -1,0 +1,68 @@
+﻿.navbar {
+    margin: 10px 0;
+}
+
+    .navbar .container-fluid {
+        max-width: var(--content-width);
+    }
+
+    .navbar .navbar-brand .logo {
+        width: 250px;
+        height: 64px;
+        padding-right: 25px;
+    }
+
+    .navbar .text-link {
+        /* 没有这两个反而不会换行 */
+        /* width: 78px;
+    height: 37px; */
+        font: bold 20px/50px Arial;
+        background: #E8E8E8;
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+    /* active或者鼠标悬停 */
+    .navbar .navbar-nav .text-link.active,
+    .navbar .navbar-nav .text-link:hover {
+        color: var(--theme-color);
+        /* 鼠标放上去要有小手 */
+        cursor: pointer;
+    }
+
+        /* 下划线 */
+        .navbar .navbar-nav .text-link.active span {
+            border-bottom: 2px solid var(--theme-color);
+        }
+
+/* 响应式布局：媒体查询 */
+@media (max-width:992px) {
+    .navbar-toggler {
+        padding: 0px;
+    }
+
+        .navbar-toggler .expand-icon {
+            width: 22.7px;
+            height: 20px;
+        }
+
+    /* 下拉背景 */
+    #navbarNav {
+        background-color: var(--bg-nav-color);
+        color: #fff;
+        /* 拉开左右没有缝隙 */
+        width: 100%;
+        margin: 0 -16px;
+        /* 下拉框和导航栏不能紧贴 */
+        position: absolute;
+        /*16是父级元素的margin*/
+        top: calc(100% + 16px);
+        /* 下拉框的层级比较高 */
+        z-index: 100;
+    }
+
+    /* 点击时按钮会半透明 */
+    .navbar-toggler .expand-icon:active {
+        opacity: .6;
+    }
+}

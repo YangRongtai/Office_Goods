@@ -5,6 +5,8 @@
 
     <div class="container-fluid">
         <div class="row">
+            <img src="../../Assets/images/1.jpg" id="logo" style="height:80px; width:1372px"/>
+
             <div class="col">
                 <h3 class="text-center">类目管理</h3>
             </div>        
